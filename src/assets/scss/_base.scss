@@ -1,0 +1,61 @@
+html {
+  background-color: $body-bg;
+  color: $base-color;
+  font-family: "Roboto", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: Roboto, "Open Sans", sans-serif;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+// disable color when auto fill inputs
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+textarea {
+  border-radius: 0 !important;
+
+  &:focus,
+  &:active {
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+}
+
+svg {
+  outline: none;
+  stroke: currentColor;
+  max-width: unset;
+
+  &.--no-stroke {
+    stroke: none;
+  }
+}
+
+a {
+  color: $link-color;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.toast:not(.show) {
+  display: none !important;
+}
